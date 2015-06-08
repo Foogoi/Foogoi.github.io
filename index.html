@@ -27,30 +27,46 @@
     </nav>
 </head>
 <body style="background-color:#424242">
-    
+    <style>
+        #title{
+            margin-bottom: 10%;<!--change when customization is added-->
+            margin-top: 10%;
+        }
+        #playbutton{
+            margin-bottom: 20%;
+            margin-top:10%; <!--change when customization is added-->
+        }
+        
+    </style>
     <center> 
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1 style="font-family:copperplate;font-size:800%;font-style:oblique" > <b> SOLID SNAKE DRIVE </b></h1> 
-        <br>
-        <br><br>
-        <br>
-        <br>
-        <br><br>
-        <br>
-        <br>
-        <br>
-        <a href="snake.html" class="waves-effect waves-light btn-large" style="font-family:copperplate;font-size:200%"> <b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PLAY!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
-        <br>
-        <br>
-        <br><br>
-        <br><br>
-        <br><br><br>
-        <br><br>
-        <br><br>
-        <br>
+        
+        <h1 id="title" style="font-family:copperplate;font-size:800%;font-style:oblique" > <b> SOLID SNAKE DRIVE </b></h1> 
+        
+        <!--
+        <div class="switch">
+            <label style="font-family:copperplate;font-size:200%">
+              Single
+              <input type="checkbox">
+              <span class="lever"></span>
+              Double
+            </label>
+        </div>
+        <div style="font-family:copperplate;font-size:200%;color:#bdbdbd">
+        SNAKE COLOR: <input type="color" value="#000000">
+        </div>
+        <div class="input-field col s12">
+            <select style="font-family:copperplate;font-size:200%;color:#bdbdbd">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label style="font-family:copperplate;font-size:200%;color:#bdbdbd">Materialize Select</label>
+        </div>-->
+        
+        
+        <a id="playbutton" href="snake.html" class="waves-effect waves-light btn-large" style="font-family:copperplate;font-size:200%"> <b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PLAY!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+       
     </center>
     
     
@@ -79,7 +95,7 @@
           <div class="footer-copyright">
             <div class="container">
             © 2015 Shantanu Jha and Hwankyu Song
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
           </div>
 </footer>

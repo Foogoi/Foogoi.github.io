@@ -30,8 +30,10 @@ $(document).ready(function ( ){
     
     customize();
     
-    width = width / box;
-    height = height / box;
+    width = width - (width%box);
+    height = height - (height%box);
+    width = width/box;
+    height= height/box;
     
     
     

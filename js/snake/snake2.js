@@ -1,20 +1,37 @@
 $(document).ready(function ( ){
-    var field = $("#field")[0].getContext('2d');
-    var width = $("#field").width();
-    var height = $("#field").height();
-    var apples = {};
-    var box = 10;
-    var increase = 0;
-    var increase_size = 3;
+    var field = $("#field")[0].getContext('2d'),
+        width = $("#field").width(),
+        height = $("#field").height(),
+        apples = {},
+        box,
+        increase = 0,
+        increase_size = 3,
+        player = {},
+        curry = 0,
+        currx = 0,
+        speed = 150,
+        interval = null,
+        temp_direction = null,
+        snake_color = "black",
+        name;
+    
+    function customize (){
+        box = 10;
+        snake_color = "black";//snake_color_choice;
+        name = "shan";//player_name;
+        /*
+        width=window.innerWidth();
+        width=width-(width%box) - 1000;
+        height=height.innerHeight();
+
+        height=height-(height%box) - 1000;
+        */
+    }
+    
+    customize();
+    
     width = width / box;
     height = height / box;
-    var player = {};
-    var player2 = {};
-    var curry = 0;
-    var currx = 0;
-    var speed = 150;
-    var interval = null;
-    var temp_direction = null;
     
     
     
@@ -53,14 +70,14 @@ $(document).ready(function ( ){
         //movement(player2);
         
         minipainter(player);
-        minipainter(player2);
+        //minipainter(player2);
         
         
         //score
         field.fillStyle="black";
-        field.font=box+"px Georgia";
+        field.font="20px Georgia";
         field.fillText("Score: " + player.score,5,height*box-5);
-        field.fillText("Score: " + player2.score, 5, height*box - (box + 5));
+        field.fillText("Score: " + player2.score, 5, height*box - 25);
         field.fillStyle="white";
 
     }
@@ -158,7 +175,7 @@ $(document).ready(function ( ){
 
     
     function setup () {
-        player = new Snake('black', "down");
+        player = new Snake(snake_color, "down");
         //initializing the body of the snake
         for (var c = player.length - 1; c >= 0; c--){
             player.body.push({x:1,y:c});

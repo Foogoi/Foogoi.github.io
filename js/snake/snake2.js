@@ -9,7 +9,7 @@ $(document).ready(function ( ){
         player = {},
         curry = 0,
         currx = 0,
-        speed = 150,
+        speed = 100,
         interval = null,
         temp_direction = null,
         snake_color = "black",

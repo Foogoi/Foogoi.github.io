@@ -90,8 +90,8 @@ $(document).ready(function ( ){
         //score
         field.fillStyle="black";
         field.font="20px Georgia";
-        field.fillText("Score: " + player.score,5,height*box-5);
-        field.fillText("Score: " + player2.score, 5, height*box - 25);
+        field.fillText("Player 1 Score: " + player.score,5,height*box-5);
+        field.fillText("Player 2 Score: " + player2.score, 5, height*box - 25);
         field.fillStyle="white";
 
     }

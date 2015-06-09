@@ -199,10 +199,10 @@ $(document).ready(function ( ){
     $(document).keydown(function(stuff){
         var key = stuff.which;
         temp_direction = player.direction;
-        if((key == "40" || key == "83") && temp_direction !== "up") player.direction = "down";
-        else if((key == "39" || key == "68") && temp_direction !== "left") player.direction = "right";
-        else if((key == "38" || key == "87") && temp_direction !== "down") player.direction = "up";
-        else if((key == "37" || key =="65") && temp_direction !== "right") player.direction = "left";
+        if((key == "83") && temp_direction !== "up") player.direction = "down";
+        else if((key == "68") && temp_direction !== "left") player.direction = "right";
+        else if((key == "87") && temp_direction !== "down") player.direction = "up";
+        else if((key =="65") && temp_direction !== "right") player.direction = "left";
     });
         
         

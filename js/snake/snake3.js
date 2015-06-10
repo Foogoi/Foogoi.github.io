@@ -201,14 +201,15 @@ $(document).ready(function ( ){
        
 
     function snake_collision(attacker, victim, position){
+        var temp_body = null;
         if (attacker.length > victim.length){
-            if (attacker.direction == -1*victim.direction && (position == 0 || position == 1)){
+            if (attacker.direction == -1*victim.direction && (position == 0)){
                 alert(attacker.name + " has won, play again?");
                 clearInterval(interval);
                 setup();
                 return;
             } else {
-                if (position == 0 || position == 1) {
+                if (position == 0) {
                     alert(attacker.name + " has won, play again?");
                     clearInterval(interval);
                     setup();
@@ -225,10 +226,8 @@ $(document).ready(function ( ){
             setup();
             return;
         } else if (attacker.length == victim.length) {
-            if (attacker.direction == -1*victim.direction && position == 0) {
-                return;
-            } else if (attacker.direction != -1*victim.direction || position != 0){
-                if (position == 0 || position == 1) {
+            if (attacker.direction != -1*victim.direction){
+                if (position == 0) {
                     alert(attacker.name + " has won, play again?");
                     clearInterval(interval);
                     setup();

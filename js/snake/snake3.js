@@ -225,7 +225,9 @@ $(document).ready(function ( ){
             setup();
             return;
         } else if (attacker.length == victim.length) {
-            if (attacker.direction != -1*victim.direction || position != 0){
+            if (attacker.direction == -1*victim.direction && position == 0) {
+                return;
+            } else if (attacker.direction != -1*victim.direction || position != 0){
                 if (position == 0 || position == 1) {
                     alert(attacker.name + " has won, play again?");
                     clearInterval(interval);
